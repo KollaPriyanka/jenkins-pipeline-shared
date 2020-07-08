@@ -12,7 +12,7 @@ def call(String msg = 'SONAR'){
                  }
             
                withSonarQubeEnv('sonarqube'){
-                     sh '${sonarscanner}/bin/sonar-scanner -Dproject.settings=./sonar.properties'
+                     sh '${sonarscanner}/bin/sonar-scanner -Dproject.settings=./sonar-project.properties'
                 }
             
 }
